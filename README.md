@@ -1,4 +1,4 @@
-Current status:
+Current status:<br>
 Arduino will first connect the backend with the known WiFi SSID and WiFi password. After successfully connecting to the WiFi, Arduino will send the MAC address of the board to the backend. After receiving the status code 200, Arduino will send the push button message to the backend each time I push the button locally. If the status code is something else, Arduino will report an error connection to the backend and stop the connection. <br>
 
 What we need to do: <br>
