@@ -70,7 +70,7 @@ void loop() {
 
 void sendToBackend(String data, String contentType, bool isInitialConnection) {
   client.beginRequest();
-  client.post("/arduino/mac");
+  client.post("/device/bugracket/new-kill");
   client.sendHeader("Content-Type", contentType);
   client.sendHeader("Content-Length", data.length());
   client.println(); // End of headers
